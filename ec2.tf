@@ -33,6 +33,6 @@ resource "aws_instance" "docker_demo" {
   vpc_security_group_ids = [aws_security_group.docker_demo_ec2.id]
 
   tags = {
-    Name = "docker-nginx-demo-instance-${count.index}"
+    Name = "${var.instance_name_prefix}-${count.index}"
   }
 }
