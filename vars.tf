@@ -11,8 +11,8 @@ variable "aws_secret_key" {
 }
 
 variable "aws_region" {
-  description = "US EAST Virginia"
-  default     = "us-east-1"
+  description = "EU Central"
+  default     = "eu-central-1"
 }
 
 # dynamically retrieves all availability zones for current region
@@ -22,7 +22,7 @@ variable "aws_region" {
 #   comment off this "azs" to retrive all AZs dynamically (uncomment the line above "data ...")
 variable "azs" {
   type    = list(string)
-  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  default = ["eu-central-1a", "eu-central-1b"]
 }
 
 variable "ec2_amis" {
@@ -34,6 +34,7 @@ variable "ec2_amis" {
     "us-east-2" = "ami-0782e9ee97725263d"
     "us-west-1" = "ami-0ad16744583f21877"
     "us-west-2" = "ami-0e32ec5bc225539f5"
+    "eu-central-1" = "ami-0e6de310858faf4dc"
   }
 }
 
