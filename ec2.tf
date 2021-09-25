@@ -25,7 +25,7 @@ resource "aws_instance" "docker_demo" {
   associate_public_ip_address = true
   count                       = length(var.azs)
   depends_on                  = [aws_subnet.private]
-  instance_type               = "t2.micro"
+  instance_type               = var.instance_type
   subnet_id                   = element(aws_subnet.private.*.id, count.index)
   user_data                   = file("user_data.sh")
 

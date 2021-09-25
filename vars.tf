@@ -56,3 +56,8 @@ variable "instance_name_prefix" {
   default     = "docker-nginx-demo-instance"
   description = "Prefix of instance name"
 }
+
+variable "instance_type" {
+  type    = string
+  default = "t2.nano"
+}
