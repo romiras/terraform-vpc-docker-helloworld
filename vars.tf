@@ -1,17 +1,17 @@
-variable "profile" {
-  description = "AWS profile, must pass on command line using -var"
-  type        = string
-}
+// variable "profile" {
+//   description = "AWS profile, must pass on command line using -var"
+//   type        = string
+// }
 
-variable "aws_access_key" {
-  description = "AWS access key, must pass on command line using -var"
-  type        = string
-}
+// variable "aws_access_key" {
+//   description = "AWS access key, must pass on command line using -var"
+//   type        = string
+// }
 
-variable "aws_secret_key" {
-  description = "AWS secret access key, must pass on command line using -var"
-  type        = string
-}
+// variable "aws_secret_key" {
+//   description = "AWS secret access key, must pass on command line using -var"
+//   type        = string
+// }
 
 variable "aws_region" {
   description = "US EAST Virginia"
